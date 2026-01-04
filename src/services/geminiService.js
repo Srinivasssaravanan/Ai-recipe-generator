@@ -5,7 +5,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 dotenv.config();
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-
+ 
 export const generateRecipeFromGemini = async (ingredients, cuisine, dietType) => {
   const prompt = `Create a detailed ${dietType} recipe using the following ingredients: ${ingredients.join(
     ", "
