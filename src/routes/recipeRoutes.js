@@ -6,3 +6,4 @@ const router = express.Router();
 router.post('/generate-vegan-recipe', generateVeganRecipe);
 
 export default router;
+ 
