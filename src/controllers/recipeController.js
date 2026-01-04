@@ -1,7 +1,7 @@
 import { generateRecipeFromGemini } from "../services/geminiService.js";
 
 export const generateRecipe = async (req, res) => {
-  const { selectedIngredients, cuisine, dietType } = req.body;
+  const { selectedIngredients, cuisine, dietType } = req.body; 
 
   if (!selectedIngredients || !cuisine || !dietType) {
     return res.status(400).json({ error: "Missing required fields" });
